@@ -13,6 +13,7 @@ You need to return the highest scoring word as a string.
 
 
 object HighestScoringWord {
+
   def high(s: String): String = {
     def value(string: String): (Int, String) = {
       (string.toLowerCase().map(_.toInt - 96).sum, string)
