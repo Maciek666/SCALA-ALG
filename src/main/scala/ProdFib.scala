@@ -25,7 +25,9 @@ F(m) being the smallest one such as F(m) * F(m+1) > prod.
  */
 
 object ProdFib {
+
   def productFib(prod: Long): Array[Long] = {
+    //(1 + sqrt(5)/2) nie działa dokładnie dla wszystkich przypadków
     var n_2 = 1l
     var n_1 = 1l
     while (n_2 * n_1 < prod) {
